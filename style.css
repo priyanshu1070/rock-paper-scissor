@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    display: flex;
+    height: 100svh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.outer-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70svh;
+    width: 90svw;
+    background-color: rgb(41, 41, 41);
+    border-radius: 1.5rem;
+    box-shadow:0 0 1.2rem rgb(255, 174, 0) ;
+}
+.h1-heading{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-container{
+    width: 100svw;
+    height: 30svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.rock,.paper,.scissors{
+    border:none;
+    background: none;
+}
+
+.rock-image,.paper-image,.scissors-image{
+    width: clamp(80px,15vw,100px);
+    height: clamp(80px,15vw,100px);
+    position: relative;
+    border-radius: 50%;
+}
+.rock-image:hover,.paper-image:hover,.scissors-image:hover{
+    /* width: clamp(40px,18vw,340px);
+    height: clamp(40px,18vw,340px); */
+    box-shadow: 0 0 1rem rgb(0, 204, 255);
+}
+#choices{
+    display: flex;
+    justify-content: center;
+}
+#player-choice,#comp-choice{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin: 2rem clamp(2rem,8vw,18rem);
+}
+.score{
+    background-color: rgb(56, 56, 56);
+    padding: 0.7rem;
+    width: 30rem;
+    border-radius: 1.4rem;
+    color: rgb(0, 255, 242);
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
